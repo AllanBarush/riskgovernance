@@ -1,472 +1,600 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Risk Governance Mastery | Programa Ejecutivo para Consejeros y C-Suite — RiskMathics</title>
-<meta name="description" content="Programa ejecutivo que convierte a Miembros del Consejo, CEOs, CROs, CFOs y C-Suite en la última línea de defensa. Financial Risk Management para órganos de gobernanza. Impartido por Moisés Tiktin, ex-CEO de Banco Monex. México · Julio 2026.">
-<meta name="keywords" content="risk governance, gobierno corporativo, consejeros, board members, risk management, CNBV, RiskMathics, Moisés Tiktin, risk committee, C-suite">
-<meta property="og:title" content="Risk Governance Mastery — El Programa Ejecutivo para Consejeros">
-<meta property="og:description" content="Turn Board Members into the last line of defense. Financial Risk Management para C-Suite y órganos de gobernanza. Julio 2026.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="es_MX">
+<title>Risk Governance Mastery — Private Wealth Management Institute</title>
+<meta name="description" content="Master Financial Risk Governance for Boards & C-Suite. 8 sessions, 24 hours with Moisés Tiktin, Former CEO of Grupo Financiero Monex.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ivory: '#FAF8F5',
-          sepialight: '#F5F0E8',
-          sepia: '#E8DFD0',
-          navy: '#1A2A4A',
-          navydeep: '#0F1A2E',
-          gold: '#C4963C',
-          goldlight: '#D4A94C',
-          teal: '#0D5C63',
-          charcoal: '#2C2C2C',
-          warmgray: '#6B6560',
-          accentred: '#8B3A3A',
-          creambg: '#F3EDE4'
-        },
-        fontFamily: {
-          poppins: ['Poppins', 'sans-serif'],
-          lora: ['Lora', 'Georgia', 'serif']
-        }
-      }
-    }
-  }
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Lora', Georgia, serif; background: #FAF8F5; color: #2C2C2C; -webkit-font-smoothing: antialiased; }
-  .font-poppins { font-family: 'Poppins', sans-serif; }
-  .display-title { font-family: 'Poppins', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
-  .gold-rule { width: 50px; height: 2px; background: #C4963C; }
-  .gold-rule-c { width: 50px; height: 2px; background: #C4963C; margin-left: auto; margin-right: auto; }
-  .hero-bg { background: linear-gradient(160deg, #0F1A2E 0%, #1A2A4A 42%, #1E3352 70%, #0D5C63 100%); }
-  .hero-bg::before { content:''; position:absolute; top:-40%; right:-25%; width:80%; height:180%; background: radial-gradient(ellipse at center, rgba(196,150,60,0.09) 0%, transparent 68%); pointer-events:none; }
-  .hero-bg::after { content:''; position:absolute; bottom:-25%; left:-18%; width:70%; height:70%; background: radial-gradient(ellipse at center, rgba(13,92,99,0.14) 0%, transparent 62%); pointer-events:none; }
-  .section-label { font-family:'Poppins',sans-serif; font-weight:600; font-size:11px; letter-spacing:4px; text-transform:uppercase; color:#C4963C; }
-  .acc-body { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.4,0,.2,1); }
-  .acc-item.open .acc-body { max-height:1400px; }
-  .acc-item.open .acc-chev { transform:rotate(45deg); }
-  .acc-chev { transition:transform .35s ease; }
-  .quote-bar { border-left:3px solid #C4963C; }
-  .nav-link { position:relative; }
-  .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; width:0; height:1.5px; background:#C4963C; transition:width .3s ease; }
-  .nav-link:hover::after { width:100%; }
-  .topic-dot::before { content:''; position:absolute; left:0; top:9px; width:6px; height:6px; background:#C4963C; }
-  .fade-up { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
-  .fade-up.in { opacity:1; transform:none; }
-  ::selection { background:#C4963C; color:#0F1A2E; }
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--navy:#0a1628;--navy-light:#0f1f3a;--navy-mid:#162a4a;
+--coral:#e8734a;--coral-light:#f0956f;--coral-dark:#d4603a;
+--gold:#c9a84c;--gold-light:#dfc06e;
+--ice:#e0e7ef;--white:#ffffff;--white-90:rgba(255,255,255,.9);
+--white-70:rgba(255,255,255,.7);--white-50:rgba(255,255,255,.5);
+--white-20:rgba(255,255,255,.2);--white-10:rgba(255,255,255,.1);
+--font-head:'Poppins',sans-serif;--font-serif:'Lora',serif;--font-body:'Inter',sans-serif;
+--max-w:1140px;--section-py:100px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--navy);color:var(--ice);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ─── NAV ─── */
+.nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(18px);background:rgba(10,22,40,.85);border-bottom:1px solid var(--white-10);transition:all .3s}
+.nav-brand{font-family:var(--font-head);font-weight:700;font-size:.95rem;letter-spacing:2px;text-transform:uppercase;color:var(--white-90)}
+.nav-brand span{color:var(--coral)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:.82rem;font-weight:500;letter-spacing:.5px;text-transform:uppercase;color:var(--white-70);transition:color .3s}
+.nav-links a:hover{color:var(--coral)}
+.nav-cta{background:var(--coral);color:#fff;padding:10px 24px;border-radius:6px;font-size:.8rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:all .3s}
+.nav-cta:hover{background:var(--coral-dark);transform:translateY(-1px)}
+
+/* ─── HERO ─── */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 40px 100px;position:relative;background:linear-gradient(170deg,var(--navy) 0%,#0d1e36 40%,#111f38 100%)}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(232,115,74,.08) 0%,transparent 60%),radial-gradient(ellipse at 70% 80%,rgba(201,168,76,.05) 0%,transparent 50%)}
+.hero-badge{display:inline-block;font-family:var(--font-head);font-size:.72rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--coral);border:1px solid rgba(232,115,74,.3);padding:8px 20px;border-radius:30px;margin-bottom:28px;position:relative;z-index:1}
+.hero h1{font-family:var(--font-head);font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:800;line-height:1.1;color:var(--white);margin-bottom:16px;position:relative;z-index:1}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero-sub{font-family:var(--font-serif);font-size:clamp(1rem,2vw,1.3rem);color:var(--white-70);max-width:680px;margin:0 auto 40px;position:relative;z-index:1;font-style:italic}
+.hero-btn{display:inline-block;background:var(--coral);color:#fff;padding:16px 40px;border-radius:8px;font-family:var(--font-head);font-size:.9rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:all .3s;position:relative;z-index:1}
+.hero-btn:hover{background:var(--coral-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(232,115,74,.3)}
+
+/* ─── SECTION UTILITIES ─── */
+.section{padding:var(--section-py) 40px}
+.container{max-width:var(--max-w);margin:0 auto}
+.section-label{font-family:var(--font-head);font-size:.72rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--coral);margin-bottom:12px}
+.section-title{font-family:var(--font-head);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:20px}
+.section-desc{font-size:1.05rem;color:var(--white-70);max-width:720px;line-height:1.8}
+.divider{width:60px;height:3px;background:var(--coral);border-radius:2px;margin:20px 0 30px}
+
+/* ─── ABOUT / ABSTRACT ─── */
+.about{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-light) 100%)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:50px}
+.about-text p{color:var(--white-70);margin-bottom:18px;font-size:1.02rem;line-height:1.85}
+.about-text p strong{color:var(--white-90)}
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.stat-card{background:var(--navy-mid);border:1px solid var(--white-10);border-radius:12px;padding:28px 24px;text-align:center;transition:all .3s}
+.stat-card:hover{border-color:var(--coral);transform:translateY(-3px)}
+.stat-num{font-family:var(--font-head);font-size:2.2rem;font-weight:800;color:var(--coral);line-height:1}
+.stat-label{font-size:.82rem;color:var(--white-50);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
+
+/* ─── WHY NOW ─── */
+.why{background:var(--navy-light)}
+.why-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+.why-card{background:var(--navy);border:1px solid var(--white-10);border-radius:14px;padding:36px 30px;transition:all .3s}
+.why-card:hover{border-color:var(--coral);transform:translateY(-4px)}
+.why-icon{width:50px;height:50px;background:rgba(232,115,74,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.4rem}
+.why-card h3{font-family:var(--font-head);font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:12px}
+.why-card p{font-size:.92rem;color:var(--white-70);line-height:1.7}
+
+/* ─── MODULES ─── */
+.modules{background:var(--navy)}
+.mod-grid{display:flex;flex-direction:column;gap:20px;margin-top:50px}
+.mod-card{display:grid;grid-template-columns:80px 1fr;gap:24px;background:var(--navy-light);border:1px solid var(--white-10);border-radius:14px;padding:32px 30px;transition:all .3s}
+.mod-card:hover{border-color:var(--coral);transform:translateX(6px)}
+.mod-num{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--coral);opacity:.7;line-height:1}
+.mod-hours{font-size:.72rem;color:var(--white-50);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.mod-content h3{font-family:var(--font-head);font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:8px}
+.mod-content p{font-size:.92rem;color:var(--white-70);line-height:1.7}
+
+/* ─── WHO ─── */
+.who{background:var(--navy-light)}
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.who-card{background:var(--navy);border:1px solid var(--white-10);border-radius:14px;padding:30px 24px;text-align:center;transition:all .3s}
+.who-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.who-icon{font-size:1.8rem;margin-bottom:14px}
+.who-card h4{font-family:var(--font-head);font-size:.95rem;font-weight:600;color:var(--white);margin-bottom:8px}
+.who-card p{font-size:.82rem;color:var(--white-50)}
+
+/* ─── FACULTY ─── */
+.faculty{background:var(--navy)}
+.faculty-card{display:grid;grid-template-columns:300px 1fr;gap:50px;margin-top:50px;background:var(--navy-light);border:1px solid var(--white-10);border-radius:18px;padding:40px;align-items:center}
+.faculty-img{width:100%;aspect-ratio:1;background:linear-gradient(135deg,var(--navy-mid),var(--coral-dark));border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:4rem;font-weight:800;color:rgba(255,255,255,.15)}
+.faculty-info h3{font-family:var(--font-head);font-size:1.6rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.faculty-info .faculty-role{font-family:var(--font-serif);font-style:italic;color:var(--coral);font-size:1rem;margin-bottom:20px}
+.faculty-info p{color:var(--white-70);font-size:.95rem;line-height:1.8;margin-bottom:14px}
+.faculty-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.faculty-tag{background:rgba(232,115,74,.1);color:var(--coral);font-size:.72rem;font-weight:600;padding:6px 14px;border-radius:20px;letter-spacing:.5px;text-transform:uppercase}
+
+/* ─── PRICING ─── */
+.pricing{background:var(--navy-light)}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px;max-width:900px;margin-left:auto;margin-right:auto}
+.price-card{background:var(--navy);border:1px solid var(--white-10);border-radius:18px;padding:44px 36px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.price-card.featured{border-color:var(--coral)}
+.price-card.featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--coral),var(--gold))}
+.price-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.price-label{font-family:var(--font-head);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--coral);margin-bottom:6px}
+.price-type{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:24px}
+.price-amount{font-family:var(--font-head);font-size:2.6rem;font-weight:800;color:var(--white);line-height:1}
+.price-currency{font-size:1rem;font-weight:400;color:var(--white-50)}
+.price-note{font-size:.82rem;color:var(--white-50);margin-top:6px;margin-bottom:28px}
+.price-features{list-style:none;text-align:left;margin-bottom:32px}
+.price-features li{font-size:.88rem;color:var(--white-70);padding:8px 0;border-bottom:1px solid var(--white-10);display:flex;align-items:center;gap:10px}
+.price-features li::before{content:'✓';color:var(--coral);font-weight:700;font-size:.8rem}
+.price-btn{display:inline-block;width:100%;padding:14px 24px;border-radius:8px;font-family:var(--font-head);font-size:.85rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;text-align:center;transition:all .3s;cursor:pointer}
+.price-btn.primary{background:var(--coral);color:#fff}
+.price-btn.primary:hover{background:var(--coral-dark);transform:translateY(-1px)}
+.price-btn.secondary{background:transparent;color:var(--coral);border:1.5px solid var(--coral)}
+.price-btn.secondary:hover{background:rgba(232,115,74,.1)}
+
+/* ─── REGISTER ─── */
+.register{background:var(--navy);position:relative}
+.register::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(232,115,74,.06) 0%,transparent 60%)}
+.register-box{max-width:640px;margin:0 auto;background:var(--navy-light);border:1px solid var(--white-10);border-radius:18px;padding:48px 44px;position:relative;z-index:1}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.78rem;font-weight:500;color:var(--white-70);margin-bottom:6px;letter-spacing:.5px;text-transform:uppercase}
+.form-group input,.form-group select{width:100%;padding:12px 16px;background:var(--navy);border:1px solid var(--white-20);border-radius:8px;color:var(--white);font-family:var(--font-body);font-size:.92rem;transition:all .3s;outline:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--coral);box-shadow:0 0 0 3px rgba(232,115,74,.15)}
+.form-group select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='%23e0e7ef'%3E%3Cpath d='M6 8L0 0h12z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.form-group select option{background:var(--navy);color:var(--ice)}
+.form-error{color:#ff6b6b;font-size:.75rem;margin-top:4px;display:none}
+.form-submit{width:100%;padding:16px;background:var(--coral);color:#fff;border:none;border-radius:8px;font-family:var(--font-head);font-size:.95rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all .3s;margin-top:8px}
+.form-submit:hover{background:var(--coral-dark);transform:translateY(-1px);box-shadow:0 8px 30px rgba(232,115,74,.3)}
+.form-submit:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.form-success{display:none;text-align:center;padding:40px 20px}
+.form-success h3{font-family:var(--font-head);font-size:1.4rem;color:var(--white);margin-bottom:10px}
+.form-success p{color:var(--white-70);font-size:.95rem}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--navy);border-top:1px solid var(--white-10);padding:40px;text-align:center}
+.footer p{font-size:.82rem;color:var(--white-50)}
+.footer a{color:var(--coral)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+.nav-links{display:none}
+.about-grid{grid-template-columns:1fr}
+.why-cards{grid-template-columns:1fr}
+.who-grid{grid-template-columns:repeat(2,1fr)}
+.faculty-card{grid-template-columns:1fr}
+.pricing-grid{grid-template-columns:1fr;max-width:460px}
+.form-row{grid-template-columns:1fr}
+.mod-card{grid-template-columns:60px 1fr}
+}
+@media(max-width:600px){
+.section{padding:60px 20px}
+.hero{padding:120px 20px 80px}
+.who-grid{grid-template-columns:1fr}
+.register-box{padding:32px 24px}
+.nav{padding:14px 20px}
+}
+
+/* ─── ANIMATIONS ─── */
+.fade-up{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.16,1,.3,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
 </style>
 </head>
-<body class="bg-ivory">
+<body>
 
-<!-- ===================== NAV ===================== -->
-<nav id="nav" class="fixed top-0 inset-x-0 z-50 bg-navydeep/95 backdrop-blur-md border-b border-white/10 transition-all">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
-    <a href="#top" class="font-poppins font-bold text-white text-sm sm:text-base tracking-widest whitespace-nowrap">RISK<span class="text-gold">MATHICS</span></a>
-    <div class="hidden lg:flex items-center gap-8 text-[13px] font-poppins font-medium text-white/70">
-      <a href="#programa" class="nav-link whitespace-nowrap hover:text-white transition">El Programa</a>
-      <a href="#porque" class="nav-link whitespace-nowrap hover:text-white transition">Por Qué Ahora</a>
-      <a href="#temario" class="nav-link whitespace-nowrap hover:text-white transition">Temario</a>
-      <a href="#instructor" class="nav-link whitespace-nowrap hover:text-white transition">Instructor</a>
-    </div>
-    <a href="#rm-enroll" class="font-poppins font-bold text-[12px] sm:text-[13px] whitespace-nowrap bg-gradient-to-r from-goldlight to-gold text-navydeep px-4 sm:px-6 py-2.5 rounded-lg hover:brightness-105 transition shadow-lg shadow-gold/20">Reservar lugar</a>
-  </div>
+<!-- NAV -->
+<nav class="nav">
+<div class="nav-brand">Private Wealth <span>Management Institute</span></div>
+<ul class="nav-links">
+<li><a href="#about">Program</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#pricing">Pricing</a></li>
+</ul>
+<a href="#register" class="nav-cta">Register</a>
 </nav>
 
-<!-- ===================== HERO ===================== -->
-<header id="top" class="hero-bg relative overflow-hidden pt-28 pb-24 sm:pt-36 sm:pb-32 px-5 sm:px-8">
-  <div class="relative max-w-5xl mx-auto text-center">
-    <div class="font-poppins font-light text-[11px] sm:text-xs tracking-[6px] text-white/50 uppercase mb-4">RiskMathics Financial Institute</div>
-    <div class="inline-block font-poppins font-medium text-[10px] sm:text-[11px] tracking-[4px] uppercase text-gold border border-gold/40 px-5 py-2 mb-9">Executive Program · Julio 2026</div>
-    <h1 class="display-title text-white text-[42px] leading-[0.98] sm:text-[80px] sm:leading-[0.95]">Risk Governance<span class="block text-goldlight">Mastery</span></h1>
-    <div class="gold-rule-c my-8"></div>
-    <p class="font-lora italic text-white/90 text-lg sm:text-2xl max-w-2xl mx-auto leading-relaxed">The Executive Program That Turns Board Members Into the Last Line of Defense</p>
-    <p class="font-lora italic text-gold/85 text-sm sm:text-base mt-4 max-w-xl mx-auto">Financial Risk Management para Miembros del Consejo, C-Suite &amp; Senior Leadership</p>
-
-    <div class="mt-10 font-poppins text-[10px] sm:text-xs tracking-[2px] uppercase text-white/40">Diseñado para</div>
-    <div class="mt-2 font-poppins text-[11px] sm:text-sm text-white/65 tracking-wide">Board Members · CEOs · CROs · CRCOs · CFOs · CTOs · COOs · Managing Directors</div>
-
-    <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#rm-enroll" class="font-poppins font-bold text-sm whitespace-nowrap bg-gradient-to-r from-goldlight to-gold text-navydeep px-8 py-4 rounded-lg hover:brightness-105 transition shadow-xl shadow-gold/25 w-full sm:w-auto">Reservar mi lugar</a>
-      <a href="#temario" class="font-poppins font-semibold text-sm whitespace-nowrap border border-white/25 text-white px-8 py-4 rounded-lg hover:bg-white/10 transition w-full sm:w-auto">Ver el temario completo</a>
-    </div>
-
-    <div class="mt-14 pt-8 border-t border-white/10 max-w-md mx-auto">
-      <div class="font-poppins font-light text-[9px] tracking-[3px] uppercase text-white/30 mb-2">Instructor</div>
-      <div class="font-poppins font-semibold text-white text-base sm:text-lg">Moisés Tiktin Nickin</div>
-      <div class="font-lora italic text-goldlight text-xs sm:text-sm mt-1">Former CEO, Banco Monex &amp; Monex Casa de Bolsa · +40 años en servicios financieros</div>
-    </div>
-  </div>
-</header>
-
-<!-- ===================== METRICS STRIP ===================== -->
-<section class="bg-navy text-white">
-  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10 border-b border-white/10">
-    <div class="text-center py-8 px-4">
-      <div class="font-poppins font-bold text-3xl sm:text-4xl text-goldlight">&gt;$2T</div>
-      <div class="font-poppins text-[9px] sm:text-[10px] tracking-widest uppercase text-white/50 mt-2">Valor destruido · crisis 2008</div>
-    </div>
-    <div class="text-center py-8 px-4">
-      <div class="font-poppins font-bold text-3xl sm:text-4xl text-goldlight">97%</div>
-      <div class="font-poppins text-[9px] sm:text-[10px] tracking-widest uppercase text-white/50 mt-2">Bancos con Risk Committee post-2015</div>
-    </div>
-    <div class="text-center py-8 px-4">
-      <div class="font-poppins font-bold text-3xl sm:text-4xl text-goldlight">36%</div>
-      <div class="font-poppins text-[9px] sm:text-[10px] tracking-widest uppercase text-white/50 mt-2">Boards que se auto-califican como efectivos</div>
-    </div>
-    <div class="text-center py-8 px-4">
-      <div class="font-poppins font-bold text-3xl sm:text-4xl text-goldlight">$1,800M</div>
-      <div class="font-poppins text-[9px] sm:text-[10px] tracking-widest uppercase text-white/50 mt-2">MXN en multas CNBV · 2025</div>
-    </div>
-  </div>
+<!-- HERO -->
+<section class="hero">
+<div>
+<div class="hero-badge">Executive Program · July 2026</div>
+<h1>RISK GOVERNANCE<br><em>MASTERY</em></h1>
+<p class="hero-sub">Financial Risk Management for Boards of Directors & the C-Suite</p>
+<a href="#about" class="hero-btn">Discover</a>
+</div>
 </section>
 
-<!-- ===================== EXECUTIVE SUMMARY / THESIS ===================== -->
-<section id="programa" class="bg-creambg py-20 sm:py-28 px-5 sm:px-8">
-  <div class="max-w-4xl mx-auto fade-up">
-    <div class="section-label">The Thesis</div>
-    <div class="gold-rule mt-3 mb-8"></div>
-    <h2 class="display-title text-navy text-3xl sm:text-5xl leading-tight">El fin de los consejos decorativos</h2>
-    <p class="font-lora italic text-teal text-lg sm:text-xl mt-5 mb-8">Por qué la era del consejero honorario terminó — y qué se exige ahora.</p>
-    <div class="space-y-6 text-charcoal/90 text-[17px] leading-[1.8]">
-      <p>Durante décadas, los Consejos de Administración de instituciones financieras y corporativos operaron como un club exclusivo. Los asientos se ocupaban por relaciones sociales, prestigio o vínculos familiares —no por competencia técnica ni por un entendimiento real de los riesgos que debían supervisar.</p>
-      <p>Las reuniones eran, en muchos casos, ceremonias de aprobación donde la dirección presentaba cifras que rara vez se cuestionaban con profundidad. El consenso era la norma; el desafío técnico, la excepción. El modelo funcionó mientras los mercados fueron benignos —hasta que su fragilidad quedó expuesta de forma brutal entre 2007 y 2009.</p>
-    </div>
-    <div class="quote-bar bg-white/60 mt-10 px-7 py-6">
-      <p class="font-lora italic text-navy text-lg leading-relaxed">"La crisis reveló que muchos consejos operaron bajo el supuesto de que la administración sabía lo que hacía. La respuesta regulatoria fue clara: ese supuesto ya no es aceptable."</p>
-      <div class="font-poppins text-gold text-xs mt-3 font-medium">— Financial Stability Board · Thematic Review on Risk Governance, 2013</div>
-    </div>
-  </div>
+<!-- ABOUT -->
+<section class="section about" id="about">
+<div class="container">
+<div class="section-label">The Program</div>
+<div class="section-title">The boardroom is the last line of defense.<br>Make it the strongest.</div>
+<div class="divider"></div>
+<div class="about-grid fade-up">
+<div class="about-text">
+<p>In an era of <strong>unprecedented financial complexity</strong> — from volatile markets and cyber risk to ESG mandates and AI-driven disruption — boards of directors can no longer delegate risk oversight to committees alone. <strong>Risk Governance Mastery</strong> is the definitive executive program designed to equip board members and C-suite leaders with the strategic frameworks, regulatory fluency, and decision-making tools required to govern risk at the highest level.</p>
+<p>Led by <strong>Moisés Tiktin</strong>, former CEO of Grupo Financiero Monex and one of Mexico's most respected financial leaders, this program distills <strong>decades of boardroom experience</strong> into 24 hours of intensive, practitioner-led instruction. Participants will master enterprise risk architecture, regulatory compliance across jurisdictions, crisis governance protocols, and the emerging risk landscape shaped by AI, climate, and geopolitical volatility.</p>
+<p>This is not a theoretical course. Every framework has been <strong>battle-tested in real boardrooms</strong>, real crises, and real regulatory environments across Latin America and global markets.</p>
+</div>
+<div class="stat-grid">
+<div class="stat-card">
+<div class="stat-num">24h</div>
+<div class="stat-label">Intensive Program</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">8</div>
+<div class="stat-label">Sessions</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">30+</div>
+<div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-card">
+<div class="stat-num">C-Suite</div>
+<div class="stat-label">Target Level</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===================== POR QUÉ AHORA + CHART ===================== -->
-<section id="porque" class="bg-ivory py-20 sm:py-28 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="text-center max-w-3xl mx-auto fade-up">
-      <div class="section-label">Por Qué Ahora</div>
-      <div class="gold-rule-c mt-3 mb-8"></div>
-      <h2 class="display-title text-navy text-3xl sm:text-5xl leading-tight">La brecha que aún no se cierra</h2>
-      <p class="font-lora text-charcoal/80 text-lg mt-6 leading-relaxed">La regulación cambió. Los comités se volvieron obligatorios. Pero la fluencia técnica de quienes ejercen el oversight sigue rezagada —y esa brecha es la razón de existir de este programa.</p>
-    </div>
-
-    <div class="mt-16 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="bg-white border border-sepia rounded-2xl p-6 sm:p-8 shadow-sm fade-up">
-        <div class="font-poppins font-semibold text-navy text-sm mb-1">Auto-evaluación de los consejos vs. realidad</div>
-        <div class="font-poppins text-warmgray text-[11px] mb-5 tracking-wide">% de directores que se sienten preparados · encuestas 2022–2024</div>
-        <div class="relative h-72"><canvas id="gapChart"></canvas></div>
-        <div class="font-poppins text-warmgray text-[10px] mt-4">Fuentes: Deloitte Global Risk Survey, McKinsey Board Governance, PwC Corporate Directors, EY Center for Board Matters.</div>
-      </div>
-      <div class="space-y-5 fade-up">
-        <div class="bg-creambg border-l-[3px] border-navy p-5">
-          <div class="font-poppins font-semibold text-navy text-[15px] mb-1">Deloitte · 2023</div>
-          <p class="text-charcoal/85 text-[15px] leading-relaxed">Solo el <strong>36%</strong> de los Board Members de instituciones financieras califican su risk oversight como "altamente efectivo".</p>
-        </div>
-        <div class="bg-creambg border-l-[3px] border-navy p-5">
-          <div class="font-poppins font-semibold text-navy text-[15px] mb-1">McKinsey · 2022</div>
-          <p class="text-charcoal/85 text-[15px] leading-relaxed">Menos del <strong>40%</strong> de los consejeros de corporativos no financieros se sienten confiados frente a instrumentos complejos y derivados.</p>
-        </div>
-        <div class="bg-creambg border-l-[3px] border-navy p-5">
-          <div class="font-poppins font-semibold text-navy text-[15px] mb-1">PwC · 2023</div>
-          <p class="text-charcoal/85 text-[15px] leading-relaxed">El <strong>58%</strong> cree que su consejo no dedica suficiente tiempo a risk strategy versus compliance.</p>
-        </div>
-        <div class="bg-creambg border-l-[3px] border-accentred p-5">
-          <div class="font-poppins font-semibold text-accentred text-[15px] mb-1">México · 2008–2009</div>
-          <p class="text-charcoal/85 text-[15px] leading-relaxed">Comercial Mexicana (~USD $1,080M), Gruma (~$684M), Vitro (~$240M) y Alfa (~$210M) perdieron miles de millones en derivados exóticos que sus consejos no comprendían.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- WHY NOW -->
+<section class="section why">
+<div class="container">
+<div class="section-label">Why Now</div>
+<div class="section-title">The risk landscape has fundamentally changed.</div>
+<div class="divider"></div>
+<div class="why-cards fade-up">
+<div class="why-card">
+<div class="why-icon">⚡</div>
+<h3>Regulatory Acceleration</h3>
+<p>Basel IV, IFRS 9, ESG disclosure mandates, and AI governance frameworks are converging simultaneously. Boards must understand the implications — or face material consequences.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🌐</div>
+<h3>Geopolitical Volatility</h3>
+<p>Supply chain disruptions, currency wars, sanctions regimes, and nearshoring dynamics demand a new caliber of risk intelligence at the board level.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">🤖</div>
+<h3>AI & Cyber Risk</h3>
+<p>Generative AI, algorithmic decision-making, and escalating cyber threats create risk categories that most boards are not yet equipped to oversee effectively.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===================== OBJETIVO / BENEFICIOS ===================== -->
-<section class="bg-navydeep py-20 sm:py-28 px-5 sm:px-8 relative overflow-hidden">
-  <div class="max-w-6xl mx-auto relative">
-    <div class="max-w-3xl fade-up">
-      <div class="section-label">Learning Outcomes</div>
-      <div class="gold-rule mt-3 mb-8"></div>
-      <h2 class="display-title text-white text-3xl sm:text-5xl leading-tight">Qué dominarás al salir</h2>
-      <p class="font-lora text-white/70 text-lg mt-6 leading-relaxed">Cerrar la brecha entre la función técnica de risk management y los órganos de gobernanza —sin requerir formación cuantitativa previa.</p>
-    </div>
-    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">01</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Comprender a fondo los riesgos financieros y no financieros, y sus herramientas de medición —sin especialización cuantitativa.</p>
-      </div>
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">02</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Discernir si el Risk Appetite y los indicadores de tu organización realmente miden y mitigan las exposiciones reales.</p>
-      </div>
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">03</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Formular las preguntas correctas a la administración y al área de riesgos, con criterio técnicamente fundamentado.</p>
-      </div>
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">04</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Aprender de las crisis financieras y corporativas más relevantes: patrones, warning signs y errores de governance.</p>
-      </div>
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">05</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Navegar los requerimientos de la CNBV para governance de consejos con confianza y precisión.</p>
-      </div>
-      <div class="bg-white/[0.04] border border-white/10 rounded-xl p-6 hover:bg-white/[0.07] transition fade-up">
-        <div class="font-poppins font-bold text-goldlight text-xl mb-3">06</div>
-        <p class="text-white/85 text-[15px] leading-relaxed">Transformar el risk management de un ejercicio de compliance en una ventaja competitiva estratégica.</p>
-      </div>
-    </div>
-  </div>
+<!-- MODULES -->
+<section class="section modules" id="modules">
+<div class="container">
+<div class="section-label">Curriculum</div>
+<div class="section-title">Eight sessions. Twenty-four hours.<br>A complete risk governance transformation.</div>
+<div class="divider"></div>
+<div class="mod-grid fade-up">
+
+<div class="mod-card">
+<div><div class="mod-num">01</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Foundations of Risk Governance</h3>
+<p>The evolving role of the board in risk oversight. Governance vs. management: drawing the line. International frameworks (COSO ERM, ISO 31000) and their practical application for directors. Building a risk-aware board culture from the top.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">02</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Enterprise Risk Architecture</h3>
+<p>Designing the enterprise risk management framework. Risk appetite statements, tolerance thresholds, and cascading metrics. Integrating risk into strategic planning and capital allocation decisions at the board level.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">03</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Market, Credit & Liquidity Risk for the Boardroom</h3>
+<p>Understanding financial risk without being a quant. Key metrics boards must monitor: VaR, Expected Shortfall, credit exposure, liquidity coverage ratios. Translating risk reports into strategic decisions. Real case studies from Mexican and global financial institutions.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">04</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Regulatory Compliance & Cross-Border Risk</h3>
+<p>Navigating the regulatory landscape: CNBV, Banxico, Basel IV, Dodd-Frank, MiFID II. Cross-border risk governance for multinational operations. Anti-money laundering, sanctions compliance, and the board's fiduciary duty in regulatory matters.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">05</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Operational, Cyber & Technology Risk</h3>
+<p>The board's role in operational resilience. Cybersecurity governance frameworks (NIST CSF, ISO 27001). Third-party and supply chain risk oversight. Building a technology risk committee that actually works.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">06</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>ESG, Climate & Reputational Risk</h3>
+<p>ESG risk as a board-level strategic priority. Climate risk disclosure (TCFD/ISSB) and scenario analysis. Reputational risk governance in the age of social media and stakeholder activism. Integrating ESG into the risk appetite framework.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">07</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Crisis Governance & Stress Testing</h3>
+<p>Board-level crisis management protocols. Designing and interpreting stress tests and scenario analyses. Lessons from real financial crises: what boards did right and wrong. Communication governance during crisis events.</p>
+</div>
+</div>
+
+<div class="mod-card">
+<div><div class="mod-num">08</div><div class="mod-hours">3 Hours</div></div>
+<div class="mod-content">
+<h3>Capstone: Your Risk Governance Blueprint</h3>
+<p>Integrate all seven modules into a comprehensive, board-ready risk governance blueprint for your organization. Peer review and faculty feedback. Leave with an actionable plan to elevate risk oversight in your boardroom.</p>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- ===================== DIRIGIDO A ===================== -->
-<section class="bg-creambg py-20 sm:py-28 px-5 sm:px-8">
-  <div class="max-w-6xl mx-auto">
-    <div class="max-w-3xl fade-up">
-      <div class="section-label">Dirigido A</div>
-      <div class="gold-rule mt-3 mb-8"></div>
-      <h2 class="display-title text-navy text-3xl sm:text-5xl leading-tight">Para quienes tienen responsabilidad fiduciaria</h2>
-      <p class="font-lora text-charcoal/80 text-lg mt-6 leading-relaxed">Diseñado exclusivamente para tomadores de decisiones con responsabilidad fiduciaria y regulatoria sobre la supervisión de riesgos.</p>
-    </div>
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">Board Members</h3><p class="text-charcoal/80 text-sm leading-relaxed">Supervisión integral del risk profile; aprobación del Risk Appetite; validación de marcos de governance.</p></div>
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">CEOs / Managing Directors</h3><p class="text-charcoal/80 text-sm leading-relaxed">Articulación del risk profile al consejo; integración del riesgo en la estrategia; tone from the top.</p></div>
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">CROs / CRCOs</h3><p class="text-charcoal/80 text-sm leading-relaxed">Comunicación del risk profile al consejo; traducción de métricas técnicas en decisiones estratégicas.</p></div>
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">CFOs</h3><p class="text-charcoal/80 text-sm leading-relaxed">Gestión de liquidez y solvencia; riesgos de balance; exposiciones en derivatives y tesorería.</p></div>
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">CTOs</h3><p class="text-charcoal/80 text-sm leading-relaxed">Technology risk y cybersecurity governance; operational resilience; AI governance y protección de datos.</p></div>
-      <div class="bg-white/70 border-l-[3px] border-navy p-6 fade-up"><h3 class="font-poppins font-semibold text-navy text-base mb-2">COOs</h3><p class="text-charcoal/80 text-sm leading-relaxed">Operational risk management; business continuity; resiliencia de supply chain.</p></div>
-    </div>
-    <p class="font-lora text-warmgray text-sm mt-8 fade-up"><strong>Aplica para:</strong> bancos, casas de bolsa, aseguradoras, SOFOMes, Afores, fondos de inversión, fintechs, bancos de desarrollo y corporativos no financieros con operaciones significativas de tesorería.</p>
-  </div>
+<!-- WHO SHOULD ATTEND -->
+<section class="section who" id="who">
+<div class="container">
+<div class="section-label">Who Should Attend</div>
+<div class="section-title">Designed for those who govern risk at the highest level.</div>
+<div class="divider"></div>
+<div class="who-grid fade-up">
+<div class="who-card">
+<div class="who-icon">👔</div>
+<h4>Board Members</h4>
+<p>Independent directors and board committee chairs overseeing risk, audit, and compliance</p>
+</div>
+<div class="who-card">
+<div class="who-icon">🏛️</div>
+<h4>CEOs & COOs</h4>
+<p>Chief executives responsible for enterprise-wide risk culture and strategic resilience</p>
+</div>
+<div class="who-card">
+<div class="who-icon">📊</div>
+<h4>CROs & CFOs</h4>
+<p>Chief Risk Officers and Chief Financial Officers leading risk frameworks and capital allocation</p>
+</div>
+<div class="who-card">
+<div class="who-icon">💻</div>
+<h4>CTOs & CIOs</h4>
+<p>Technology leaders governing cyber, operational, and digital transformation risk</p>
+</div>
+<div class="who-card">
+<div class="who-icon">⚖️</div>
+<h4>General Counsel</h4>
+<p>Legal officers navigating regulatory compliance and fiduciary governance obligations</p>
+</div>
+<div class="who-card">
+<div class="who-icon">🏦</div>
+<h4>Senior Regulators</h4>
+<p>Regulatory professionals seeking deeper understanding of board-level risk governance practices</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===================== TEMARIO / CURRICULUM ACCORDION ===================== -->
-<section id="temario" class="bg-ivory py-20 sm:py-28 px-5 sm:px-8">
-  <div class="max-w-4xl mx-auto">
-    <div class="text-center max-w-3xl mx-auto fade-up">
-      <div class="section-label">Curriculum</div>
-      <div class="gold-rule-c mt-3 mb-8"></div>
-      <h2 class="display-title text-navy text-3xl sm:text-5xl leading-tight">Temario detallado</h2>
-      <p class="font-poppins font-medium text-teal text-base mt-5">8 sesiones ejecutivas · 24+ horas de formación intensiva · 6 crisis analizadas · 2 War Rooms</p>
-    </div>
-
-    <div id="accordion" class="mt-14 space-y-4">
-
-      <!-- DÍA 1 -->
-      <div class="acc-item bg-white border border-sepia rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-gold text-sm">DÍA 1</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Tipología de Riesgos y Herramientas de Gestión</span></div>
-          <span class="acc-chev text-gold text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-warmgray mb-5">Visión integral de los riesgos que enfrenta cualquier organización y las herramientas para medirlos y mitigarlos.</p>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-2">I. Financial Risks</h4>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Credit Risk · Market Risk · Liquidity Risk</li>
-            <li class="relative pl-5 topic-dot">Solvency Risk · Valuation / Model Risk · Counterparty Risk</li>
-          </ul>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-5">II. Non-Financial Risks</h4>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Operational Risk · Technology Risk &amp; Cybersecurity</li>
-            <li class="relative pl-5 topic-dot">Compliance &amp; AML Failures · Innovation Risks</li>
-            <li class="relative pl-5 topic-dot">Geopolitical &amp; Supply Chain Risks · Climate Risks</li>
-          </ul>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-5">III. Risk Tools &amp; Indicators</h4>
-          <ul class="space-y-2 text-[15px]"><li class="relative pl-5 topic-dot">Recorrido integral por las herramientas actuales de medición y gestión.</li></ul>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-5">IV. El Risk Governance Framework</h4>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Modelo de las Three Lines of Defense</li>
-            <li class="relative pl-5 topic-dot">Risk Appetite Framework (RAF): cómo debe definirlo el consejo</li>
-            <li class="relative pl-5 topic-dot">Risk Dashboards para consejeros: qué debe contener un reporte ejecutivo</li>
-            <li class="relative pl-5 topic-dot">Reputational Risk &amp; ESG · Requerimientos de governance de la CNBV</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <!-- DÍA 2 -->
-      <div class="acc-item bg-white border border-sepia rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-gold text-sm">DÍA 2</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Regulación como Respuesta a las Crisis Financieras</span></div>
-          <span class="acc-chev text-gold text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-warmgray mb-5">Las crisis que redefinieron la regulación financiera global y sus implicaciones para la governance corporativa.</p>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">La Crisis de 1929 y la Great Depression</li>
-            <li class="relative pl-5 topic-dot">Crisis de México 1982 · Crisis de México 1994–1995</li>
-            <li class="relative pl-5 topic-dot">Crisis Asiática 1997 · Crisis Subprime 2007–2008</li>
-            <li class="relative pl-5 topic-dot">De Basel I a Basel III.1: evolución de capital y liquidity</li>
-            <li class="relative pl-5 topic-dot">Dodd-Frank y su impacto en los boards</li>
-            <li class="relative pl-5 topic-dot">Personal Liability del consejero: México vs. estándares internacionales</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <!-- DÍA 3 -->
-      <div class="acc-item bg-white border border-sepia rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-gold text-sm">DÍA 3</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Regulación como Respuesta a Quiebras Corporativas</span></div>
-          <span class="acc-chev text-gold text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-warmgray mb-5">Casos específicos de crisis corporativas: semejanzas, diferencias y lecciones regulatorias.</p>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">La Crisis de Alfa (1982–1986)</li>
-            <li class="relative pl-5 topic-dot">La quiebra de LTCM (1998)</li>
-            <li class="relative pl-5 topic-dot">El caso Enron (2001)</li>
-            <li class="relative pl-5 topic-dot">La quiebra de Lehman (2008) · El caso Comercial Mexicana (2008)</li>
-          </ul>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-5">Patrones de Corporate Governance Failure</h4>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">La confianza ciega reemplazando el technical oversight</li>
-            <li class="relative pl-5 topic-dot">Red flags: concentración de riesgos, complejidad injustificada, opacidad</li>
-            <li class="relative pl-5 topic-dot">Whistleblower y lecciones de Sarbanes-Oxley</li>
-            <li class="relative pl-5 topic-dot">Cultura y tone from the top: el consejo como última línea de defensa</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <!-- DÍA 4 -->
-      <div class="acc-item bg-white border border-sepia rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-gold text-sm">DÍA 4</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Capstone: ¿Se pudieron evitar?</span></div>
-          <span class="acc-chev text-gold text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-warmgray mb-5">Con las herramientas regulatorias actuales, ¿habrían podido evitarse Enron, LTCM, Lehman y Comercial Mexicana?</p>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Análisis de cifras reportadas e información pública</li>
-            <li class="relative pl-5 topic-dot">Aplicación de risk indicators actuales a datos históricos</li>
-            <li class="relative pl-5 topic-dot">Semejanzas, warning signals y medidas preventivas</li>
-            <li class="relative pl-5 topic-dot">Qué riesgos pudieron mitigarse vs. cuáles eran inevitables</li>
-          </ul>
-          <h4 class="font-poppins font-semibold text-teal text-sm mb-2 mt-5">Stress Testing &amp; Scenarios para Consejeros</h4>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Stress testing regulatorio: qué exigir y cómo interpretar resultados</li>
-            <li class="relative pl-5 topic-dot">Reverse stress testing: identificar qué escenario quiebra a la empresa</li>
-            <li class="relative pl-5 topic-dot">Rol del consejo en Business Continuity (BCP/DRP)</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <!-- DÍA 5 -->
-      <div class="acc-item bg-white border border-sepia rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-gold text-sm">DÍA 5</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Sentido Común &amp; Errores Fundamentales</span></div>
-          <span class="acc-chev text-gold text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-warmgray mb-5">Recomendaciones prácticas que, aunque son de sentido común, frecuentemente se ignoran.</p>
-          <ul class="space-y-2 text-[15px]">
-            <li class="relative pl-5 topic-dot">Falta de entendimiento integral del negocio y sus riesgos</li>
-            <li class="relative pl-5 topic-dot">Falta de definición de funciones y responsabilidades</li>
-            <li class="relative pl-5 topic-dot">Problemática de falta de liquidez · Contacto limitado con clientes</li>
-            <li class="relative pl-5 topic-dot">Desalineación de incentivos · Fallas de comunicación</li>
-            <li class="relative pl-5 topic-dot">Riesgos emergentes: Generative AI, Quantum Computing, Digital Assets, DeFi</li>
-            <li class="relative pl-5 topic-dot">Checklist del consejero efectivo: las 10 preguntas para cada Risk Committee</li>
-          </ul>
-        </div></div>
-      </div>
-
-      <!-- DÍA 6 · WAR ROOM -->
-      <div class="acc-item bg-white border border-accentred/40 rounded-xl overflow-hidden fade-up">
-        <button class="acc-head w-full flex items-center justify-between gap-4 text-left px-6 py-5">
-          <div class="flex items-center gap-4"><span class="font-poppins font-bold text-accentred text-sm">DÍA 6</span><span class="font-poppins font-semibold text-navy text-base sm:text-lg">Capstone War Room Simulations</span></div>
-          <span class="acc-chev text-accentred text-2xl leading-none font-light flex-none">+</span>
-        </button>
-        <div class="acc-body"><div class="px-6 pb-6 text-charcoal/85">
-          <p class="font-lora italic text-accentred mb-5">Cuando se rompen las correlaciones y todo se hunde — el Consejo decide.</p>
-          <p class="text-[15px] mb-5">Escenarios originales de crisis en la tradición del case method de Wharton-Harvard. Los participantes se convierten en el Consejo y toman decisiones en tiempo real, bajo presión extrema, con información incompleta e intereses en conflicto.</p>
-          <div class="grid sm:grid-cols-2 gap-3">
-            <div class="border border-sepia bg-sepialight/40 p-4"><div class="font-poppins font-bold text-accentred text-[11px] tracking-wide uppercase">Fase 1 · 15 min</div><div class="font-poppins font-semibold text-navy text-sm mt-1">Briefing Pre-Crisis</div><p class="text-charcoal/75 text-[13px] mt-1">Se asignan roles: Chairman, CEO, CRO, CFO, Independent Director, Legal Counsel.</p></div>
-            <div class="border border-sepia bg-sepialight/40 p-4"><div class="font-poppins font-bold text-accentred text-[11px] tracking-wide uppercase">Fase 2 · 10 min</div><div class="font-poppins font-semibold text-navy text-sm mt-1">El Detonador</div><p class="text-charcoal/75 text-[13px] mt-1">Se revela el evento de crisis; los equipos evalúan impacto inicial.</p></div>
-            <div class="border border-sepia bg-sepialight/40 p-4"><div class="font-poppins font-bold text-accentred text-[11px] tracking-wide uppercase">Fase 3 · 15 min</div><div class="font-poppins font-semibold text-navy text-sm mt-1">La Cascada</div><p class="text-charcoal/75 text-[13px] mt-1">Información adicional cada 5 minutos, simulando desarrollos en tiempo real.</p></div>
-            <div class="border border-sepia bg-sepialight/40 p-4"><div class="font-poppins font-bold text-accentred text-[11px] tracking-wide uppercase">Fase 4 · 25 min</div><div class="font-poppins font-semibold text-navy text-sm mt-1">Decisión del Consejo</div><p class="text-charcoal/75 text-[13px] mt-1">Los equipos deliberan, debaten trade-offs y votan su curso de acción.</p></div>
-            <div class="border border-sepia bg-sepialight/40 p-4 sm:col-span-2"><div class="font-poppins font-bold text-accentred text-[11px] tracking-wide uppercase">Fase 5 · 25 min</div><div class="font-poppins font-semibold text-navy text-sm mt-1">Governance Debrief</div><p class="text-charcoal/75 text-[13px] mt-1">Análisis guiado de lo que el consejo debió hacer pre, durante y post-crisis; identificación de governance failures y comparación con análogos reales.</p></div>
-          </div>
-        </div></div>
-      </div>
-
-    </div>
-
-    <p class="text-center font-lora italic text-warmgray text-sm mt-8 fade-up">Prerrequisitos: <strong>no</strong> se requiere formación cuantitativa. Mínimo 3 años en Senior Management, consejo o comités; familiaridad general con conceptos financieros básicos.</p>
-  </div>
+<!-- FACULTY -->
+<section class="section faculty" id="faculty">
+<div class="container">
+<div class="section-label">Faculty</div>
+<div class="section-title">Practitioners, not professors.</div>
+<div class="divider"></div>
+<div class="faculty-card fade-up">
+<div class="faculty-img">MT</div>
+<div class="faculty-info">
+<h3>Moisés Tiktin</h3>
+<div class="faculty-role">Former CEO, Grupo Financiero Monex</div>
+<p>Moisés Tiktin is one of Mexico's most distinguished financial leaders, having served as CEO of Grupo Financiero Monex — one of the country's largest and most diversified financial groups, with operations spanning foreign exchange, banking, derivatives, brokerage, and asset management.</p>
+<p>With over three decades of experience at the intersection of financial markets, risk management, and corporate governance, Tiktin has navigated multiple economic crises, regulatory transformations, and market disruptions. His leadership at Monex positioned the group as a benchmark for risk governance excellence in Latin America.</p>
+<p>He brings to this program the rare perspective of a CEO who has sat on both sides of the boardroom table — managing risk as an executive and overseeing it as a director — making him uniquely qualified to teach the governance frameworks that matter most.</p>
+<div class="faculty-tags">
+<span class="faculty-tag">Risk Governance</span>
+<span class="faculty-tag">Financial Markets</span>
+<span class="faculty-tag">Corporate Leadership</span>
+<span class="faculty-tag">Banking & FX</span>
+<span class="faculty-tag">Regulatory Strategy</span>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===================== METODOLOGÍA STRIP ===================== -->
-<section class="bg-navy py-16 sm:py-20 px-5 sm:px-8">
-  <div class="max-w-5xl mx-auto text-center fade-up">
-    <div class="section-label">Metodología</div>
-    <div class="gold-rule-c mt-3 mb-8"></div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
-      <div><div class="font-poppins font-semibold text-white text-base mb-2">Análisis de crisis</div><p class="text-white/60 text-sm leading-relaxed">Cada herramienta de riesgo se entiende dentro de su contexto histórico real.</p></div>
-      <div><div class="font-poppins font-semibold text-white text-base mb-2">Apoyo audiovisual</div><p class="text-white/60 text-sm leading-relaxed">Escenas curadas de casos documentados llevados al cine.</p></div>
-      <div><div class="font-poppins font-semibold text-white text-base mb-2">Capstones</div><p class="text-white/60 text-sm leading-relaxed">Herramientas de riesgo aplicadas a empresas reales con datos públicos.</p></div>
-      <div><div class="font-poppins font-semibold text-white text-base mb-2">War Room</div><p class="text-white/60 text-sm leading-relaxed">Simulaciones en la tradición del case method Wharton-Harvard.</p></div>
-    </div>
-  </div>
+<!-- PRICING -->
+<section class="section pricing" id="pricing">
+<div class="container">
+<div class="section-label" style="text-align:center">Investment</div>
+<div class="section-title" style="text-align:center">Invest in governance that protects value.</div>
+<div class="divider" style="margin:20px auto 30px"></div>
+<div class="pricing-grid fade-up">
+
+<div class="price-card featured">
+<div class="price-label">Enroll Now</div>
+<div class="price-type">Open Program</div>
+<div class="price-amount"><span class="price-currency">MXN </span>$48,000</div>
+<div class="price-note">+ IVA · per participant</div>
+<ul class="price-features">
+<li>24 hours of live instruction</li>
+<li>8 intensive sessions</li>
+<li>Risk Governance Blueprint deliverable</li>
+<li>Cross-industry peer network</li>
+<li>Certificate of completion</li>
+<li>Post-program faculty access</li>
+</ul>
+<a href="#register" class="price-btn primary">Enroll Now</a>
+</div>
+
+<div class="price-card">
+<div class="price-label">Request Info</div>
+<div class="price-type">More Information</div>
+<div class="price-amount" style="font-size:1.6rem;color:var(--white-70)">Custom Pricing</div>
+<div class="price-note">no commitment</div>
+<ul class="price-features">
+<li>Full program details & syllabus</li>
+<li>In-company delivery options</li>
+<li>Organization-specific case studies</li>
+<li>Custom scheduling available</li>
+<li>Group discounts for 3+ participants</li>
+<li>Executive coaching add-on</li>
+</ul>
+<a href="mailto:info@wealthinstitute.com.mx?subject=More%20Information%20%E2%80%93%20Risk%20Governance%20Mastery&body=I%20would%20like%20to%20request%20more%20information%20about%20the%20Risk%20Governance%20Mastery%20program.%0A%0ACompany%3A%20%0AName%3A%20%0ARole%3A%20%0ANumber%20of%20participants%3A%20%0A%0AThank%20you." class="price-btn secondary">Request More Info</a>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- ===================== INSTRUCTOR ===================== -->
-<section id="instructor" class="bg-creambg py-20 sm:py-28 px-5 sm:px-8">
-  <div class="max-w-5xl mx-auto">
-    <div class="fade-up">
-      <div class="section-label">Instructor</div>
-      <div class="gold-rule mt-3 mb-8"></div>
-    </div>
-    <div class="grid lg:grid-cols-3 gap-10 items-start">
-      <div class="lg:col-span-1 fade-up">
-        <div class="bg-navy border-2 border-gold rounded-lg aspect-[4/5] flex items-center justify-center p-8 text-center">
-          <div>
-            <div class="font-poppins font-bold text-white text-2xl leading-tight">Moisés<br>Tiktin Nickin</div>
-            <div class="w-10 h-[2px] bg-gold mx-auto my-4"></div>
-            <div class="font-lora italic text-goldlight text-sm">Former CEO,<br>Banco Monex</div>
-          </div>
-        </div>
-      </div>
-      <div class="lg:col-span-2 fade-up">
-        <h2 class="display-title text-navy text-3xl sm:text-4xl leading-tight">Moisés Tiktin Nickin</h2>
-        <p class="font-lora italic text-gold text-lg mt-3 mb-6">Former CEO, Banco Monex &amp; Monex Casa de Bolsa · Consejero Independiente · ITAM Faculty</p>
-        <div class="space-y-5 text-charcoal/85 text-[16px] leading-[1.8]">
-          <p>Uno de los ejecutivos más experimentados del sector financiero mexicano, con más de <strong>cuatro décadas</strong> en banca, mercados de capitales, gestión de riesgos y gobierno corporativo. Economista con honores por el ITAM, con estudios de posgrado y doctorado en Finanzas y Economía Internacional en la <strong>Universidad de Chicago</strong>. En 2025 obtuvo la certificación Certified Chair Executive Program del Advisory Board Centre.</p>
-          <p>Fue CEO de <strong>Monex Casa de Bolsa</strong> durante 10 años y de <strong>Banco Monex</strong> durante 11 años, supervisando subsidiarias internacionales en Londres, Ámsterdam, Madrid, Toronto, Singapur, Washington D.C., Nueva York y Los Ángeles.</p>
-          <p>Actualmente es Consejero Independiente y miembro de comités estratégicos en Vitalis (Afore), Hospital ABC, Carbon Plus y el Advisory Board del ITAM. Ha participado en los consejos de la ABM, la Bolsa Mexicana de Valores, la AMIB y Valores Finamex. Es profesor de Economía y Finanzas en el ITAM y columnista de El Economista.</p>
-        </div>
-        <div class="mt-6 pt-5 border-t border-sepia">
-          <div class="font-poppins font-semibold text-teal text-sm">Áreas de expertise</div>
-          <p class="font-poppins text-warmgray text-[13px] mt-2 leading-relaxed">Risk Management integral · Corporate Governance · FX &amp; Derivatives Markets · Regulación financiera mexicana e internacional · Executive Leadership · Crisis Management</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- REGISTER -->
+<section class="section register" id="register">
+<div class="container">
+<div class="register-box fade-up">
+<div class="section-label" style="text-align:center">Registration</div>
+<div class="section-title" style="text-align:center;font-size:1.6rem">Secure Your Seat</div>
+<div class="divider" style="margin:16px auto 32px"></div>
+
+<form id="registrationForm" novalidate>
+<div class="form-row">
+<div class="form-group">
+<label for="name">Full Name *</label>
+<input type="text" id="name" name="name" required placeholder="First name">
+<div class="form-error" id="nameError">Please enter your full name</div>
+</div>
+<div class="form-group">
+<label for="surname_paterno">Surname Paterno *</label>
+<input type="text" id="surname_paterno" name="surname_paterno" required placeholder="Apellido paterno">
+<div class="form-error" id="paternoError">Please enter your paterno surname</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="surname_materno">Last Name Materno *</label>
+<input type="text" id="surname_materno" name="surname_materno" required placeholder="Apellido materno">
+<div class="form-error" id="maternoError">Please enter your materno surname</div>
+</div>
+<div class="form-group">
+<label for="title">Title / Position *</label>
+<input type="text" id="title" name="title" required placeholder="e.g. Board Member, CRO">
+<div class="form-error" id="titleError">Please enter your title</div>
+</div>
+</div>
+<div class="form-group">
+<label for="company">Company *</label>
+<input type="text" id="company" name="company" required placeholder="Organization name">
+<div class="form-error" id="companyError">Please enter your company</div>
+</div>
+<div class="form-group">
+<label for="email">Business Email *</label>
+<input type="email" id="email" name="email" required placeholder="name@company.com">
+<div class="form-error" id="emailError">Please enter a valid business email (no Gmail, Hotmail, or Yahoo)</div>
+</div>
+<div class="form-group">
+<label for="sector">Sector *</label>
+<select id="sector" name="sector" required>
+<option value="" disabled selected>Select your sector</option>
+<option value="Banking">Banking</option>
+<option value="Insurance">Insurance</option>
+<option value="Asset Management">Asset Management</option>
+<option value="Private Equity / VC">Private Equity / Venture Capital</option>
+<option value="Brokerage">Brokerage</option>
+<option value="Family Office">Family Office</option>
+<option value="Pension Fund">Pension Fund</option>
+<option value="Regulatory / Government">Regulatory / Government</option>
+<option value="Corporate Treasury">Corporate Treasury</option>
+<option value="Consulting">Consulting</option>
+<option value="Technology / Fintech">Technology / Fintech</option>
+<option value="Energy">Energy</option>
+<option value="Real Estate">Real Estate</option>
+<option value="Other">Other</option>
+</select>
+<div class="form-error" id="sectorError">Please select your sector</div>
+</div>
+<button type="submit" class="form-submit" id="submitBtn">Register Now</button>
+</form>
+
+<div class="form-success" id="formSuccess">
+<h3>✓ Registration Received</h3>
+<p>Thank you for your interest in Risk Governance Mastery. Our executive programs team will contact you within 24 business hours.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===================== DETALLES + CUPO LIMITADO ===================== -->
-<section class="hero-bg relative overflow-hidden py-16 sm:py-20 px-5 sm:px-8">
-  <div class="relative max-w-5xl mx-auto">
-    <div class="text-center fade-up">
-      <div class="inline-block font-poppins font-bold text-[11px] tracking-[3px] uppercase text-accentred bg-white px-5 py-2 rounded-full mb-6">Cupo estrictamente limitado</div>
-      <h2 class="display-title text-white text-2xl sm:text-4xl leading-tight">Un grupo reducido. Una sala de consejo.</h2>
-      <p class="font-lora text-white/70 text-base mt-4 max-w-2xl mx-auto">Las War Room Simulations exigen grupos pequeños para funcionar. Los lugares se asignan por orden de inscripción.</p>
-    </div>
-    <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-3xl">8</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">Sesiones</div></div>
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-3xl">24+</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">Horas</div></div>
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-3xl">6</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">Crisis</div></div>
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-3xl">2</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">War Rooms</div></div>
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-3xl">1</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">Certificado</div></div>
-      <div class="bg-white/[0.06] border border-white/10 rounded-lg py-6"><div class="font-poppins font-bold text-goldlight text-xl mt-1.5">Presencial</div><div class="font-poppins text-white/50 text-[10px] tracking-widest uppercase mt-1">Formato · Español</div></div>
-    </div>
-  </div>
-</section>
+<!-- FOOTER -->
+<footer class="footer">
+<p>© 2026 Private Wealth Management Institute · A RiskMathics Company · <a href="mailto:info@wealthinstitute.com.mx">info@wealthinstitute.com.mx</a></p>
+</footer>
 
-<!-- ===================== SALES MACHINE v3 ===================== -->
+<script>
+// Intersection Observer for fade-up animations
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+// Email validation — block free providers
+function isBusinessEmail(email){
+const blocked=['gmail.com','hotmail.com','yahoo.com','outlook.com','live.com','aol.com','icloud.com','mail.com','protonmail.com','yahoo.com.mx','hotmail.es'];
+const domain=email.split('@')[1]?.toLowerCase();
+return domain&&!blocked.includes(domain);
+}
+
+// Form handling
+const form=document.getElementById('registrationForm');
+const submitBtn=document.getElementById('submitBtn');
+
+form.addEventListener('submit',async function(e){
+e.preventDefault();
+let valid=true;
+
+// Reset errors
+document.querySelectorAll('.form-error').forEach(el=>el.style.display='none');
+
+const name=document.getElementById('name').value.trim();
+const surname_paterno=document.getElementById('surname_paterno').value.trim();
+const surname_materno=document.getElementById('surname_materno').value.trim();
+const title=document.getElementById('title').value.trim();
+const company=document.getElementById('company').value.trim();
+const email=document.getElementById('email').value.trim();
+const sector=document.getElementById('sector').value;
+
+if(!name){document.getElementById('nameError').style.display='block';valid=false}
+if(!surname_paterno){document.getElementById('paternoError').style.display='block';valid=false}
+if(!surname_materno){document.getElementById('maternoError').style.display='block';valid=false}
+if(!title){document.getElementById('titleError').style.display='block';valid=false}
+if(!company){document.getElementById('companyError').style.display='block';valid=false}
+if(!email||!isBusinessEmail(email)){document.getElementById('emailError').style.display='block';valid=false}
+if(!sector){document.getElementById('sectorError').style.display='block';valid=false}
+
+if(!valid)return;
+
+submitBtn.disabled=true;
+submitBtn.textContent='Sending...';
+
+const payload={
+name,
+surname_paterno,
+surname_materno,
+title,
+company,
+email,
+sector,
+program:'Risk Governance Mastery',
+source:'landing_page',
+timestamp:new Date().toISOString()
+};
+
+try{
+await fetch('https://allanbarush.app.n8n.cloud/webhook/landing-page-lead',{
+method:'POST',
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify(payload),
+mode:'no-cors'
+});
+form.style.display='none';
+document.getElementById('formSuccess').style.display='block';
+}catch(err){
+submitBtn.disabled=false;
+submitBtn.textContent='Register Now';
+alert('There was an error. Please try again or email info@wealthinstitute.com.mx');
+}
+});
+</script>
 <!-- ===== RISKMATHICS SALES MACHINE v3.2 (inyectable) ===== -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 <style>
@@ -480,7 +608,7 @@
   #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
   @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
 </style>
-<section id="rm-enroll" style="background:linear-gradient(135deg,#1A2A4A,#0F1A2E);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#0a1f3c);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
   <div style="max-width:600px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:38px;">
       <div style="color:#C4963C;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
@@ -558,11 +686,11 @@
       <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tus datos. Te enviamos el temario a tu correo y un asesor te contactará.</div>
       <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
         <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:300;color:#0F1A2E;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">MXN $87,000</div>
+        <div style="font-size:30px;font-weight:300;color:#0a1f3c;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">MXN $87,000</div>
         <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">IVA incluido</div>
         <div style="display:grid;gap:10px;">
           <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=riskgovernance" target="_blank" rel="noopener" style="background:#C4963C;color:#1b1710;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/fZu4gr7jp7yMf33cfn2Ry1u" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0F1A2E;color:#0F1A2E;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/fZu4gr7jp7yMf33cfn2Ry1u" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0a1f3c;color:#0a1f3c;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
         </div>
         <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
@@ -601,66 +729,6 @@ else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
 </script>
 <!-- ===== /SALES MACHINE v3.2 ===== -->
 
-
-
-<!-- ===================== FOOTER ===================== -->
-<footer class="bg-navydeep text-center py-14 px-5 sm:px-8 border-t border-white/10">
-  <div class="font-poppins font-bold text-white tracking-[3px] text-sm uppercase">RiskMathics Financial Institute</div>
-  <div class="font-lora italic text-gold text-sm mt-2">Financial Innovation Through Education</div>
-  <div class="font-poppins text-white/40 text-xs mt-4 tracking-wide">www.riskmathics.com</div>
-  <div class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-white/40 text-xs font-poppins">
-    <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" class="hover:text-gold transition">Aviso de Privacidad</a>
-    <span class="hidden sm:inline">·</span>
-    <a href="#rm-enroll" class="hover:text-gold transition">Inscripción</a>
-    <span class="hidden sm:inline">·</span>
-    <a href="mailto:tmartic@riskmathics.us" class="hover:text-gold transition">tmartic@riskmathics.us</a>
-  </div>
-  <div class="font-poppins text-white/25 text-[11px] mt-6">© 2026 RiskMathics Financial Institute · Risk Governance Mastery · Todos los derechos reservados</div>
-</footer>
-
-<script>
-// Accordion
-document.querySelectorAll('.acc-head').forEach(function(h){
-  h.addEventListener('click',function(){
-    var item=h.closest('.acc-item');
-    var wasOpen=item.classList.contains('open');
-    document.querySelectorAll('.acc-item').forEach(function(i){i.classList.remove('open');i.querySelector('.acc-chev').textContent='+';});
-    if(!wasOpen){item.classList.add('open');item.querySelector('.acc-chev').textContent='+';}
-  });
-});
-// Open Day 1 by default
-(function(){var f=document.querySelector('.acc-item');if(f)f.classList.add('open');})();
-// Nav shrink on scroll
-window.addEventListener('scroll',function(){var n=document.getElementById('nav');if(window.scrollY>40){n.classList.add('shadow-2xl');}else{n.classList.remove('shadow-2xl');}});
-// Fade-up on scroll
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
-document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
-// Chart: the governance gap
-window.addEventListener('load',function(){
-  var ctx=document.getElementById('gapChart');if(!ctx||!window.Chart)return;
-  new Chart(ctx,{
-    type:'bar',
-    data:{
-      labels:['Risk oversight\n"altamente efectivo"','Confianza con\ninstrumentos complejos','Tiempo suficiente\nen risk strategy','Preparados en\ncyber / AI / climate'],
-      datasets:[{
-        label:'% de directores',
-        data:[36,40,42,28],
-        backgroundColor:['#1A2A4A','#0D5C63','#C4963C','#8B3A3A'],
-        borderRadius:6,
-        barThickness:38
-      }]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.parsed.y+'% de los consejeros';}}}},
-      scales:{
-        y:{beginAtZero:true,max:100,ticks:{callback:function(v){return v+'%';},font:{family:'Poppins',size:11},color:'#6B6560'},grid:{color:'#Eee7db'}},
-        x:{ticks:{font:{family:'Poppins',size:10},color:'#2C2C2C',maxRotation:0,autoSkip:false,callback:function(v){var l=this.getLabelForValue(v);return l.split('\n');}},grid:{display:false}}
-      }
-    }
-  });
-});
-</script>
-
+<a href="#rm-enroll" style="position:fixed;bottom:22px;right:22px;z-index:99999;background:#C4963C;color:#1b1710;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:50px;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.32);">Inscríbete &rarr;</a>
 </body>
 </html>
